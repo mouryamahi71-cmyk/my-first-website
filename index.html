@@ -1,81 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Meri Pehli Website</title>
+    <title>Mahi's Portfolio</title>
 
     <style>
         body{
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            text-align: center;
-            padding-top: 50px;
+            margin:0;
+            font-family:Arial,sans-serif;
+            background:linear-gradient(135deg,#6dd5ed,#2193b0);
+            text-align:center;
+            color:white;
         }
 
-        h1{
-            color: blue;
-        }
-
-        h2{
-            color: darkblue;
-        }
-
-        button{
-            background-color: green;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-            cursor: pointer;
+        .container{
+            max-width:600px;
+            margin:40px auto;
+            background:white;
+            color:black;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
         }
 
         img{
             width:180px;
             height:180px;
             border-radius:50%;
-            border:4px solid blue;
+            border:5px solid #2193b0;
+        }
+
+        h1{
+            color:#2193b0;
+        }
+
+        h2{
+            color:#333;
+        }
+
+        button{
+            background:#2193b0;
+            color:white;
+            padding:12px 20px;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#176b87;
+        }
+
+        a{
+            text-decoration:none;
+            color:#2193b0;
+            font-weight:bold;
         }
     </style>
 </head>
 
 <body>
 
-<h2>Contact Me</h2>
+<div class="container">
 
-<p>📧 Email: mahi@example.com</p>
-<p>📱 Phone: 9876543210</p>
+<img src="https://via.placeholder.com/180" alt="My Photo">
 
-<p>Thank you for visiting my website! ❤️</p>
+<h1>👋 Hello, I'm Mahi</h1>
+
+<p>Welcome to my first portfolio website.</p>
 
 <hr>
 
 <h2>About Me</h2>
 
 <p>
-Hi! Mera naam Mahi hai.<br>
-Main Web Development aur English seekh rahi hoon.<br>
-Mera goal ek successful freelancer banna hai.
+Hi! My name is <b>Mahi</b>.<br><br>
+
+🎓 I have passed 12th.<br>
+💻 I am learning HTML, CSS and JavaScript.<br>
+🚀 My dream is to become a successful Web Developer & Freelancer.
 </p>
 
-<h1>Hello Mahi! 👋</h1>
+<hr>
 
-<img src="https://via.placeholder.com/200" alt="Meri Photo">
+<h2>My Skills</h2>
+
+<p>
+✅ HTML<br>
+🟡 CSS (Learning)<br>
+🟡 JavaScript (Learning)
+</p>
+
+<hr>
+
+<button onclick="alert('❤️ Thank You For Visiting My Website!')">
+Click Me
+</button>
 
 <br><br>
 
-<a href="https://www.google.com" target="_blank">Google Visit Karo</a>
+<a href="https://www.google.com" target="_blank">
+Visit Google
+</a>
 
-<p>Yeh meri pehli website hai.</p>
+<hr>
 
-<button onclick="alert('Hello Mahi! 🎉 Tumne button click kiya.')">
-Mujhe Click Karo
-</button>
+<p>Made with ❤️ by Mahi</p>
 
-<p id="demo"></p>
-
-<button onclick="document.getElementById('demo').innerHTML='🎉 Button Click Ho Gaya!'">
-Mujhe Click Karo
-</button>
+</div>
 
 </body>
 </html>

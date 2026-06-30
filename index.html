@@ -1,113 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mahi's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial,sans-serif;
-            background:linear-gradient(135deg,#6dd5ed,#2193b0);
-            text-align:center;
-            color:white;
-        }
+<title>Mahi's Portfolio</title>
 
-        .container{
-            max-width:600px;
-            margin:40px auto;
-            background:white;
-            color:black;
-            padding:30px;
-            border-radius:15px;
-            box-shadow:0 0 20px rgba(0,0,0,0.3);
-        }
+<style>
 
-        img{
-            width:180px;
-            height:180px;
-            border-radius:50%;
-            border:5px solid #2193b0;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        h1{
-            color:#2193b0;
-        }
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#6dd5ed,#2193b0);
+padding:20px;
+}
 
-        h2{
-            color:#333;
-        }
+.container{
+max-width:700px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+text-align:center;
+}
 
-        button{
-            background:#2193b0;
-            color:white;
-            padding:12px 20px;
-            border:none;
-            border-radius:8px;
-            font-size:16px;
-            cursor:pointer;
-        }
+img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #2193b0;
+object-fit:cover;
+}
 
-        button:hover{
-            background:#176b87;
-        }
+h1{
+margin-top:15px;
+color:#2193b0;
+}
 
-        a{
-            text-decoration:none;
-            color:#2193b0;
-            font-weight:bold;
-        }
-    </style>
+h2{
+margin-top:25px;
+color:#176b87;
+}
+
+p{
+margin-top:10px;
+line-height:1.8;
+color:#444;
+}
+
+hr{
+margin:25px 0;
+}
+
+.skills{
+text-align:left;
+margin-top:20px;
+}
+
+.skill{
+margin-bottom:15px;
+}
+
+.bar{
+background:#ddd;
+height:12px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:12px;
+background:#2193b0;
+}
+
+.html{
+width:90%;
+}
+
+.css{
+width:60%;
+}
+
+.js{
+width:40%;
+}
+
+button{
+margin-top:25px;
+padding:12px 25px;
+background:#2193b0;
+color:white;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#176b87;
+transform:scale(1.05);
+}
+
+.resume{
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+background:#28a745;
+color:white;
+padding:12px 20px;
+border-radius:10px;
+}
+
+.resume:hover{
+background:#1e7e34;
+}
+
+.footer{
+margin-top:30px;
+color:#777;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<img src="https://via.placeholder.com/180" alt="My Photo">
+<img src="mahi.jpg" alt="Mahi">
 
 <h1>👋 Hello, I'm Mahi</h1>
 
-<p>Welcome to my first portfolio website.</p>
+<p>Welcome to my professional portfolio website.</p>
 
 <hr>
 
-<h2>About Me</h2>
+<h2>🙋 About Me</h2>
 
 <p>
-Hi! My name is <b>Mahi</b>.<br><br>
+Hi! I'm <b>Mahi</b>.<br><br>
 
-🎓 I have passed 12th.<br>
-💻 I am learning HTML, CSS and JavaScript.<br>
-🚀 My dream is to become a successful Web Developer & Freelancer.
+🎓 I have completed 12th.<br>
+
+💻 Currently learning HTML, CSS & JavaScript.<br>
+
+🚀 My goal is to become a Professional Web Developer & Freelancer.
 </p>
 
 <hr>
 
-<h2>My Skills</h2>
+<h2>💻 My Skills</h2>
 
-<p>
-✅ HTML<br>
-🟡 CSS (Learning)<br>
-🟡 JavaScript (Learning)
-</p>
+<div class="skills">
+
+<div class="skill">
+HTML
+<div class="bar">
+<div class="fill html"></div>
+</div>
+</div>
+
+<div class="skill">
+CSS
+<div class="bar">
+<div class="fill css"></div>
+</div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar">
+<div class="fill js"></div>
+</div>
+</div>
+
+</div>
 
 <hr>
 
-<button onclick="alert('❤️ Thank You For Visiting My Website!')">
-Click Me
+<h2>📂 My Projects</h2>
+
+<p>🌐 Personal Portfolio Website</p>
+
+<p>🚧 More projects coming soon...</p>
+
+<hr>
+
+<button onclick="showMessage()">
+❤️ Click Me
 </button>
 
-<br><br>
+<br>
 
-<a href="https://www.google.com" target="_blank">
-Visit Google
+<a class="resume" href="#">
+📄 Download Resume
 </a>
 
 <hr>
 
-<p>Made with ❤️ by Mahi</p>
+<h2>📞 Contact Me</h2>
+
+<p>
+
+📧 Email: your@email.com
+
+<br><br>
+
+🌍 GitHub:
+<br>
+
+https://github.com/yourusername
+
+</p>
+
+<div class="footer">
+
+Made with ❤️ by Mahi
 
 </div>
+
+</div>
+
+<script>
+
+function showMessage(){
+
+alert("❤️ Thank You For Visiting My Portfolio!");
+
+}
+
+</script>
 
 </body>
 </html>

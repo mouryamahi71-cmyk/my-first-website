@@ -1,206 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Mahi's Portfolio</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#6dd5ed,#2193b0);
-padding:20px;
-}
-
-.container{
-max-width:700px;
-margin:auto;
-background:#fff;
-padding:30px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.3);
-text-align:center;
-}
-
-img{
-width:180px;
-height:180px;
-border-radius:50%;
-border:5px solid #2193b0;
-object-fit:cover;
-}
-
-h1{
-margin-top:15px;
-color:#2193b0;
-}
-
-h2{
-margin-top:25px;
-color:#176b87;
-}
-
-p{
-margin-top:10px;
-line-height:1.8;
-color:#444;
-}
-
-hr{
-margin:25px 0;
-}
-
-.skills{
-text-align:left;
-margin-top:20px;
-}
-
-.skill{
-margin-bottom:15px;
-}
-
-.bar{
-background:#ddd;
-height:12px;
-border-radius:20px;
-overflow:hidden;
-}
-
-.fill{
-height:12px;
-background:#2193b0;
-}
-
-.html{
-width:90%;
-}
-
-.css{
-width:60%;
-}
-
-.js{
-width:40%;
-}
-
-button{
-margin-top:25px;
-padding:12px 25px;
-background:#2193b0;
-color:white;
-border:none;
-border-radius:10px;
-font-size:16px;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-background:#176b87;
-transform:scale(1.05);
-}
-
-.resume{
-display:inline-block;
-margin-top:20px;
-text-decoration:none;
-background:#28a745;
-color:white;
-padding:12px 20px;
-border-radius:10px;
-}
-
-.resume:hover{
-background:#1e7e34;
-}
-
-.footer{
-margin-top:30px;
-color:#777;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<img src="mahi.jpg" alt="Mahi">
-
-<h1>👋 Hello, I'm Mahi</h1>
-
-<p>Welcome to my professional portfolio website.</p>
-
-<hr>
-
-<h2>🙋 About Me</h2>
-
-<p>
-Hi! I'm <b>Mahi</b>.<br><br>
-
-🎓 I have completed 12th.<br>
-
-💻 Currently learning HTML, CSS & JavaScript.<br>
-
-🚀 My goal is to become a Professional Web Developer & Freelancer.
-</p>
-
-<hr>
-
-<h2>💻 My Skills</h2>
-
-<div class="skills">
-
-<div class="skill">
-HTML
-<div class="bar">
-<div class="fill html"></div>
-</div>
-</div>
-
-<div class="skill">
-CSS
-<div class="bar">
-<div class="fill css"></div>
-</div>
-</div>
-
-<div class="skill">
-JavaScript
-<div class="bar">
-<div class="fill js"></div>
-</div>
-</div>
-
-</div>
-
 <hr>
 
 <h2>📂 My Projects</h2>
 
-<p>🌐 Personal Portfolio Website</p>
+<div class="project">
+<h3>🌐 Personal Portfolio Website</h3>
+<p>A modern responsive portfolio website built using HTML, CSS and JavaScript.</p>
+</div>
 
-<p>🚧 More projects coming soon...</p>
+<div class="project">
+<h3>🍔 Restaurant Website</h3>
+<p>A beautiful restaurant landing page with menu and contact section.</p>
+</div>
+
+<div class="project">
+<h3>🛍️ Online Store Landing Page</h3>
+<p>A clean e-commerce landing page with attractive UI design.</p>
+</div>
+
+<hr>
+
+<h2>💼 My Services</h2>
+
+<p>✅ Portfolio Website</p>
+<p>✅ Landing Page Design</p>
+<p>✅ Responsive Website</p>
+<p>✅ HTML/CSS Website</p>
 
 <hr>
 
 <button onclick="showMessage()">
-❤️ Click Me
+❤️ Hire Me
 </button>
 
-<br>
+<br><br>
 
-<a class="resume" href="#">
+<a class="resume" href="resume.pdf" download>
 📄 Download Resume
 </a>
 
@@ -209,34 +43,21 @@ JavaScript
 <h2>📞 Contact Me</h2>
 
 <p>
-
-📧 Email: your@email.com
-
+📧 Email: mahi@example.com
 <br><br>
-
-🌍 GitHub:
+💻 GitHub:
 <br>
-
-https://github.com/yourusername
-
+https://github.com/mouryamahii71-cmwjk
 </p>
 
 <div class="footer">
-
 Made with ❤️ by Mahi
-
-</div>
-
 </div>
 
 <script>
-
 function showMessage(){
-
-alert("❤️ Thank You For Visiting My Portfolio!");
-
+alert("Thank you for visiting my portfolio! Contact me for your website project.");
 }
-
 </script>
 
 </body>
